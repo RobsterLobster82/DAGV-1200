@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: scene.ma
-//Last modified: Tue, Aug 26, 2025 07:48:58 PM
+//Last modified: Tue, Aug 26, 2025 08:19:42 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "B913B7BA-467E-DE57-6B07-C38EFABF5A7B";
+fileInfo "UUID" "D3D14400-495F-3403-2569-2A9A4F3D91FF";
 createNode transform -s -n "persp";
 	rename -uid "C74FD55D-4C26-53F5-8B98-D1B97D8145E5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.332535430271486 18.242058417786986 29.579575041425162 ;
-	setAttr ".r" -type "double3" -27.599999999994481 1818.3999999998821 -8.3797952588903564e-16 ;
+	setAttr ".t" -type "double3" 21.764609286452007 11.045738753474517 2.9626504819558797 ;
+	setAttr ".r" -type "double3" -23.399999999998911 1887.5999999994613 3.7976179444480546e-14 ;
 	setAttr ".rpt" -type "double3" 1.0657195016591876e-18 -2.2599364651445002e-16 4.7760576619198607e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "53CCFCB3-4936-1BB6-3574-0A95D24E3943";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 31.347514260019032;
+	setAttr ".coi" 21.772991539680856;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -38,7 +38,7 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
+	setAttr ".ow" 41.99930074005011;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
@@ -54,7 +54,7 @@ createNode camera -s -n "frontShape" -p "front";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 0.48736918336402085;
+	setAttr ".ow" 24.48736918336402;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -71,7 +71,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 1.4755257085028537;
+	setAttr ".ow" 15.907490464196982;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
@@ -183,11 +183,11 @@ createNode mesh -n "Chair__2_Shape" -p "Chair__2_";
 	setAttr ".dr" 1;
 createNode transform -n "group1" -p "Chairs";
 	rename -uid "298E94D1-4F0C-A8DF-ABDD-5FB2BFDA2899";
-createNode transform -n "pCube1";
+createNode transform -n "Floor";
 	rename -uid "A93FCB5B-40F9-4CFF-6B34-28A8F7FFE8A1";
 	setAttr ".t" -type "double3" 0 0.43656164334286496 0 ;
 	setAttr ".s" -type "double3" 28.506820109144858 0.32026160633520528 28.506820109144858 ;
-createNode mesh -n "pCubeShape1" -p "pCube1";
+createNode mesh -n "FloorShape" -p "Floor";
 	rename -uid "EE25AA25-4AB3-C06C-3229-FC8136E9EFE3";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -3744,7 +3744,7 @@ connectAttr "pasted__pasted__polyBridgeEdge16.out" "pasted__Chair__2_Shape.i";
 connectAttr "pasted__polyBridgeEdge24.out" "pasted__Chair__1_Shape.i";
 connectAttr "polyBridgeEdge16.out" "Chair__1_Shape.i";
 connectAttr "pasted__polyBridgeEdge16.out" "Chair__2_Shape.i";
-connectAttr "polyCube3.out" "pCubeShape1.i";
+connectAttr "polyCube3.out" "FloorShape.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -4392,5 +4392,5 @@ connectAttr "Chair__1_Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Chair__2_Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pasted__Chair__1_Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pasted__Chair__2_Shape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "FloorShape.iog" ":initialShadingGroup.dsm" -na;
 // End of scene.ma
