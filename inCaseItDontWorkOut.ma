@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: inCaseItDontWorkOut.ma
-//Last modified: Thu, Sep 25, 2025 12:43:32 PM
+//Last modified: Thu, Sep 25, 2025 01:06:56 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "F8745C9E-4932-8D44-0CB2-ED8722AA3627";
+fileInfo "UUID" "23ECEE48-4B93-25EA-95C7-EC9D1B8667EE";
 createNode transform -s -n "persp";
 	rename -uid "C74FD55D-4C26-53F5-8B98-D1B97D8145E5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 17.008478294881154 21.19966329542309 25.91494105364302 ;
-	setAttr ".r" -type "double3" -28.199999999991658 2551.6000000003646 1.8671211123997354e-15 ;
+	setAttr ".t" -type "double3" 81.60954423442827 51.439893756065707 89.61530241466339 ;
+	setAttr ".r" -type "double3" -25.800000000000509 2545.6000000002614 1.7633843248861312e-15 ;
 	setAttr ".rpt" -type "double3" 1.0657195016591876e-18 -2.2599364651445002e-16 4.7760576619198607e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "53CCFCB3-4936-1BB6-3574-0A95D24E3943";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 36.428375764982839;
+	setAttr ".coi" 107.41812212722527;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -13186,8 +13186,8 @@ createNode polyExtrudeFace -n "polyExtrudeFace30";
 	setAttr ".cbn" -type "double3" -0.96174731958498105 3.0385410257311927 -4.6793619374430246 ;
 	setAttr ".cbx" -type "double3" 0.96280849814398128 5.0133170553179847 4.6829137487718473 ;
 select -ne :time1;
-	setAttr ".o" 29;
-	setAttr ".unw" 29;
+	setAttr ".o" 73;
+	setAttr ".unw" 73;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
