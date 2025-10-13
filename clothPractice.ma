@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: clothPractice.ma
-//Last modified: Mon, Oct 13, 2025 10:43:03 AM
+//Last modified: Mon, Oct 13, 2025 10:55:25 AM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,21 +13,22 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "2684CD88-48A0-25FE-426D-138B40303490";
+fileInfo "UUID" "E6BC5C2B-4958-7FC0-9CF4-0D9F177024A1";
 createNode transform -s -n "persp";
 	rename -uid "A1D636B5-4BD3-1A99-3A1A-01A91C83D3E9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -9.3367471826794883 21.051189654487512 35.545282517193115 ;
-	setAttr ".r" -type "double3" -30.599999999960737 702.79999999999859 360.00000000001154 ;
+	setAttr ".t" -type "double3" 15.697544203020527 22.239220250163562 -4.5512528318131444 ;
+	setAttr ".r" -type "double3" -44.39999999994447 840.7999999999131 359.99999999994031 ;
 	setAttr ".rpt" -type "double3" -7.9490083596914521e-19 -8.1973596717907275e-19 -5.0427187849702885e-18 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "90392968-40C7-E483-CD3D-BDAEB9FFFD0D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 39.780731424080003;
+	setAttr ".coi" 33.232257460719694;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
+	setAttr ".tp" -type "double3" 1.31735888551618 3.3441634241719251 11.917620470886828 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "828AC0D0-4896-C0AB-A2FA-F79E430A0B68";
@@ -48682,8 +48683,8 @@ createNode spotLight -n "spotLightShape1" -p "spotLight1";
 	setAttr ".in" 10;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "7D571310-48A6-47BC-DE6D-2FB3B3647E96";
-	setAttr -s 4 ".lnk";
-	setAttr -s 4 ".slnk";
+	setAttr -s 5 ".lnk";
+	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "E079709E-440D-B078-EEF4-2DB5B9AF899F";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
