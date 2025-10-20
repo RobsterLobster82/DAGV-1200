@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: clothPractice.ma
-//Last modified: Mon, Oct 20, 2025 04:09:49 PM
+//Last modified: Mon, Oct 20, 2025 04:18:19 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -12,22 +12,22 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "42631A50-4FD6-5DE1-8556-52ABBDB59EE9";
+fileInfo "UUID" "FC56661E-445D-8DD6-A1D0-D3B213D11DDE";
 createNode transform -s -n "persp";
 	rename -uid "A1D636B5-4BD3-1A99-3A1A-01A91C83D3E9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 8.8692192510607661 6.8126042786159475 -11.422951560169183 ;
-	setAttr ".r" -type "double3" -28.799999999998718 -1687.5999999999447 0 ;
-	setAttr ".rpt" -type "double3" 2.3146173145620343e-14 -2.3005880128503376e-16 -1.8854017394520824e-15 ;
+	setAttr ".t" -type "double3" 15.948821943701224 7.0889199904976001 -15.714293553740907 ;
+	setAttr ".r" -type "double3" -17.400000000000954 118.39999999999955 0 ;
+	setAttr ".rpt" -type "double3" 6.9768321881908811e-14 6.4567291013009007e-15 8.3013979849775243e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "90392968-40C7-E483-CD3D-BDAEB9FFFD0D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 2.0535657809585;
+	setAttr ".coi" 10.599443128153048;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 7.2054492819420624 5.8232914186296654 -10.737195064284476 ;
+	setAttr ".tp" -type "double3" 7.2054492819420624 3.2884591038371735 -10.737195064284476 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "828AC0D0-4896-C0AB-A2FA-F79E430A0B68";
@@ -48688,7 +48688,6 @@ createNode mesh -n "pCubeShape1" -p "transform1";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "pointLight1";
 	rename -uid "127B7E6F-47EF-3905-8976-7D82139CCFAE";
-	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0.52015263725751915 2.4605760241576782 -2.1497188379861933 ;
 createNode pointLight -n "pointLightShape1" -p "pointLight1";
 	rename -uid "8C814B33-4198-6B02-26D0-B2890819995C";
@@ -48699,7 +48698,6 @@ createNode pointLight -n "pointLightShape1" -p "pointLight1";
 	setAttr ".ai_exposure" 3.7662336826324463;
 createNode transform -n "aiSkyDomeLight1";
 	rename -uid "86564D76-4467-AD0B-787E-C8B3F821BCD1";
-	setAttr ".v" no;
 createNode aiSkyDomeLight -n "aiSkyDomeLightShape1" -p "aiSkyDomeLight1";
 	rename -uid "24D75F88-446D-53BB-6E4B-A79CE0867EEA";
 	setAttr -k off ".v";
@@ -59752,7 +59750,6 @@ createNode mesh -n "pasted__pasted__pCylinderShape1" -p "pasted__pasted__pCylind
 	setAttr ".pt[204]" -type "float3" 0.0089210458 0 0 ;
 createNode transform -n "Lantern";
 	rename -uid "9C3DC184-4E94-FE06-3A37-CFA71D1AEF63";
-	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0 -1.4323885852592291 0 ;
 	setAttr ".rp" -type "double3" 7.2054492819420641 5.1745202725727868 -10.73719565157219 ;
 	setAttr ".sp" -type "double3" 7.2054492819420641 5.1745202725727868 -10.73719565157219 ;
@@ -59960,7 +59957,6 @@ createNode mesh -n "pPlaneShape11" -p "transform5";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Glass";
 	rename -uid "F88F5D34-4775-E351-CFE1-AE868A3E50DB";
-	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0 -1.4323885852592291 0 ;
 	setAttr ".rp" -type "double3" 7.1858123879500226 5.1745210585841326 -10.731599256652556 ;
 	setAttr ".sp" -type "double3" 7.1858123879500226 5.1745210585841326 -10.731599256652556 ;
@@ -60256,7 +60252,7 @@ createNode mesh -n "pSphereShape1" -p "pSphere1";
 	setAttr ".dsm" 2;
 createNode transform -n "candle";
 	rename -uid "96299369-4FD8-5023-8BA0-A09359FE8421";
-	setAttr ".t" -type "double3" 7.2054492819420624 5.8232914186296654 -10.737195064284476 ;
+	setAttr ".t" -type "double3" 7.2054492819420624 5.8232914186296654 -10.700819842436029 ;
 	setAttr ".s" -type "double3" 0.41682756486375827 0.41682756486375827 0.41682756486375827 ;
 createNode pointLight -n "candleShape" -p "candle";
 	rename -uid "1AB5990E-4797-22EC-FFB8-55A00F869DF6";
