@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: inCaseItDontWorkOut.ma
-//Last modified: Fri, Oct 24, 2025 11:08:11 AM
+//Last modified: Fri, Oct 24, 2025 11:19:37 AM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "polyBoolean" "polyBoolean" "1.1";
@@ -13,23 +13,23 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "98309A02-4D05-FDF1-8FEA-21BB90059249";
+fileInfo "UUID" "A1662D44-423C-6BE6-2FE1-02A6DF495E6A";
 createNode transform -s -n "persp";
 	rename -uid "C74FD55D-4C26-53F5-8B98-D1B97D8145E5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 29.42539467927876 23.340600319307274 37.429628410749011 ;
-	setAttr ".r" -type "double3" -19.06438968442578 68.599999999994665 0 ;
+	setAttr ".t" -type "double3" 29.677779846479677 12.210011367115504 26.46076433547676 ;
+	setAttr ".r" -type "double3" -16.064389684431678 45.399999999995565 1.1324292716153651e-15 ;
 	setAttr ".rp" -type "double3" 7.4070473107265939e-14 1.3792526210595758e-13 -9.0949470177292824e-13 ;
 	setAttr ".rpt" -type "double3" -6.1740822015157674e-13 -5.6142860465229041e-13 2.746498558858025e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "53CCFCB3-4936-1BB6-3574-0A95D24E3943";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 23.936843389525048;
+	setAttr ".coi" 46.636690358226758;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 5.0669084936514501 10.622288111682028 33.333436761346853 ;
+	setAttr ".tp" -type "double3" -10.954788468740583 2.2462011666318902 0.064945994626768422 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "5D60A40E-4C50-71DA-21A9-30ADD7B7965B";
@@ -2902,7 +2902,6 @@ createNode mesh -n "pasted__pasted__pTorus3Shape" -p "pasted__pasted__pTorus3";
 	setAttr ".dsm" 2;
 createNode transform -n "spotLight1";
 	rename -uid "E33205A3-46E1-8BF5-084C-5D86ED63DB9A";
-	setAttr ".v" no;
 	setAttr ".t" -type "double3" 5.7360429459457469 11.018833493084593 -24.718924589990124 ;
 	setAttr ".r" -type "double3" -17.767152227246306 150.81896846898982 0 ;
 	setAttr ".s" -type "double3" 5.068990694498293 5.068990694498293 5.068990694498293 ;
@@ -2913,7 +2912,6 @@ createNode spotLight -n "spotLightShape1" -p "spotLight1";
 	setAttr ".ai_exposure" 11.363636016845703;
 createNode transform -n "aiSkyDomeLight1";
 	rename -uid "638029AC-4046-8B25-0B2C-988677156815";
-	setAttr ".v" no;
 createNode aiSkyDomeLight -n "aiSkyDomeLightShape1" -p "aiSkyDomeLight1";
 	rename -uid "92212D37-4F1B-3625-2538-49928393FFB7";
 	setAttr -k off ".v";
@@ -20012,8 +20010,8 @@ createNode mesh -n "pasted__BookShape5" -p "pasted__Book5";
 	setAttr ".dr" 1;
 createNode transform -n "pCylinder1";
 	rename -uid "62FE9C3F-435A-0710-7C30-E49FA6A4F4F7";
-	setAttr ".t" -type "double3" 3.998822295082717 10.049391559414852 33.336111651723066 ;
-	setAttr ".s" -type "double3" 3.0254468142116351 0.36977673139358846 3.0254468142116351 ;
+	setAttr ".t" -type "double3" -12.358071216256542 0.54913644779026427 -2.6065533885836865 ;
+	setAttr ".s" -type "double3" 1.0816263552205001 0.13219874047821192 1.0816263552205001 ;
 createNode mesh -n "pCylinderShape1" -p "pCylinder1";
 	rename -uid "5A6661FB-4B04-1A83-2B97-6FB7B477560A";
 	setAttr -k off ".v";
