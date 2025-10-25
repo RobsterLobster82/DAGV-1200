@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: inCaseItDontWorkOut.ma
-//Last modified: Sat, Oct 25, 2025 10:58:24 AM
+//Last modified: Sat, Oct 25, 2025 10:58:52 AM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "F441495B-42C8-F75B-3BE5-E6A89E0BB974";
+fileInfo "UUID" "064E2481-465E-4941-DFA2-BBB9FD2E2288";
 createNode transform -s -n "persp";
 	rename -uid "C74FD55D-4C26-53F5-8B98-D1B97D8145E5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 44.26820283925349 31.343183154336604 22.194229740737118 ;
-	setAttr ".r" -type "double3" -25.664389682867821 59.39999999999749 -3.1240627806038801e-15 ;
+	setAttr ".t" -type "double3" 36.051905136763864 37.345000553312111 28.111541653621611 ;
+	setAttr ".r" -type "double3" -31.664389682867849 49.799999999997468 -2.463797969994595e-15 ;
 	setAttr ".rp" -type "double3" 0 -1.7763568394002505e-15 0 ;
 	setAttr ".rpt" -type "double3" 2.1198411019096258e-13 -3.4248071679955611e-13 -1.0936775190154974e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
