@@ -1,0 +1,42 @@
+newmtl SixMeshSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TEX_Player_Body_D.png
+bump  -bm 1 TEX_Player_Body_N.png
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 98.00
+newmtl SixMeshSG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TEX_Player_Coat_D.png
+bump  -bm 1 TEX_Player_Coat_N.png
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 98.00
+newmtl SixMeshSG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TEX_Player_Hair_D.png
+bump  -bm 1 TEX_Player_Hair_N.png
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 2.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl standardSurface3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
