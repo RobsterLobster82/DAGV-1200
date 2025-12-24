@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: skyCOTLnest.ma
-//Last modified: Tue, Dec 23, 2025 08:27:07 PM
+//Last modified: Tue, Dec 23, 2025 10:20:01 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "B4BF39CB-4256-07ED-D0DA-B2971BD77D25";
+fileInfo "UUID" "CE22AAE9-440F-AD3A-E2EB-17AB0431D129";
 createNode transform -s -n "persp";
 	rename -uid "E5A8B2DC-436A-908A-5ACA-8E82EDD47607";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 21.922617080409164 22.313334360814139 0.6724484112147161 ;
-	setAttr ".r" -type "double3" -47.138352729734429 86.199999999982808 0 ;
+	setAttr ".t" -type "double3" 24.731478802299481 19.315500508879278 0.40133375918006453 ;
+	setAttr ".r" -type "double3" -38.738352729735475 87.399999999982825 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "EEB4A0E7-40EA-A935-3921-B5BF7D5D8116";
 	setAttr -k off ".v" no;
